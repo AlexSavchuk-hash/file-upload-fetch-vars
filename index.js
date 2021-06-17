@@ -8,7 +8,7 @@ var fetch = require('node-fetch'); // requires node-fetch as dependency
 var upfile = 'image.jpg';
 
 // set auth token and query
-var API_KEY = "eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjk3NjE2MTE3LCJ1aWQiOjk2MDM0MTcsImlhZCI6IjIwMjEtMDEtMjhUMTU6MjM6MzAuMDAwWiIsInBlciI6Im1lOndyaXRlIiwiYWN0aWQiOjQzNjUxODUsInJnbiI6InVzZTEifQ.7VPotMxEZfubObCtrVVPyqUIb70Cz5lGmD50CXpkcTI"
+var API_KEY = "YourSuperSecretAPIkey"
 var query = 'mutation ($file: File!, $itemId: ItemId!, $columnId: columnId!) { add_file_to_column (file: $file, item_id: $itemId, column_id: $columnId { id } }';
 var variables = {"itemId": 1104589433,"columnId":"files"};
 
